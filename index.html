@@ -31,6 +31,29 @@
           color: #000;
         }
       }
+      @media (max-width: 599px) {
+        .column {
+          border: none !important;
+          margin-left: 50px;
+          width: 100%;
+        }
+        #hero-sum {
+          border-bottom: 1px solid #000 !important;
+        }
+        .four-columns .column {
+          margin: 0;
+          width: 22%;
+          height: 100%;
+        }
+        #btn {
+          height: 40px !important;
+        }
+
+        #foot-adj {
+          width: 250px;
+
+        }
+      }
     </style>
   </head>
   <body style="margin: 0; padding: 0; min-width: 100%">
@@ -56,7 +79,7 @@
                   <img
                     src="./images/Group 1.png"
                     alt=""
-                    style="max-width: 600px"
+                    style="max-width: 600px; width: 100%"
                   />
                 </td>
               </tr>
@@ -71,57 +94,80 @@
                     <td class="two-columns">
                       <table
                         class="column"
+                        id="hero-sum"
                         style="
                           border-spacing: 0;
                           width: 100%;
                           max-width: 300px;
                           vertical-align: top;
                           display: inline-block;
+                          border-right: 1px solid #000;
                         "
                       >
                         <tr>
                           <td class="padding" style="padding: 20px">
-                            <h2
-                              class="dark-style-text"
-                              style="padding-top: 10px"
-                            >
+                            <h2 class="dark-style-text" id="summary-head">
                               SUMMARY:
                             </h2>
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               Order #:
                             </p>
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               Order Date:
                             </p>
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               Order Total:
                             </p>
                           </td>
-                          <td class="padding" style="padding-top: 59px">
+                          <td class="padding" style="padding-top: 38px">
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               75634082
                             </p>
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               7/8/22
                             </p>
                             <p
                               class="dark-style-text"
-                              style="font-size: 20px; font-weight: 500"
+                              style="
+                                font-size: 20px;
+                                font-weight: 500;
+                                margin: 10px 0;
+                              "
                             >
                               $53.75
                             </p>
@@ -132,17 +178,17 @@
                         class="column"
                         style="
                           width: 100%;
-                          max-width: 300px;
+                          max-width: 294px;
                           border-spacing: 0;
                           vertical-align: top;
                           display: inline-block;
                         "
                       >
                         <tr>
-                          <td class="padding">
+                          <td class="padding" style="padding-left: 20px">
                             <h2
                               class="dark-style-text"
-                              style="display: inline-block; margin: 0"
+                              style="display: inline-block"
                             >
                               SHIPPING ADDRESS:
                             </h2>
@@ -152,6 +198,7 @@
                                 font-size: 20px;
                                 font-weight: 500;
                                 margin: 0;
+                                line-height: 30px;
                               "
                             >
                               Smiley Johnson<br />123 SomeWhere AVE.<br />SomeWhere,
@@ -163,6 +210,263 @@
                     </td>
                   </tr>
                 </table>
+                <tr>
+                  <td height="8" style="background-color: #000"></td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding"
+                    style="background-color: #eeee; padding-left: 5px"
+                  >
+                    <table width="100%" style="border-spacing: 0">
+                      <tr>
+                        <td class="four-columns">
+                          <table
+                            class="column"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              max-width: 130px;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  class="dark-style-text"
+                                  style="padding: 10px"
+                                >
+                                  Package 1:
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table
+                            class="column"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              max-width: 150px;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <a
+                                  href="#"
+                                  class="item"
+                                  style="margin-left: 27px"
+                                  ><button
+                                    id="btn"
+                                    style="
+                                      background-color: #19a5d1;
+                                      border-radius: 5px;
+                                      font-size: 12px;
+                                      height: 30px;
+                                      margin-top: 3px;
+                                      cursor: pointer;
+                                    "
+                                  >
+                                    Track Package
+                                  </button></a
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                          <table
+                            class="column"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              max-width: 150px;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  class="dark-style-text"
+                                  style="padding: 10px; margin-left: 48px"
+                                >
+                                  QTY: 1
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table
+                            class="column"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              max-width: 150px;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <p
+                                  class="dark-style-text"
+                                  style="padding: 10px; margin-left: 35px"
+                                >
+                                  Price: $49.25
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    class="padding" id="foot-sec"
+                    style="padding-top: 15px; padding-left: 13px"
+                  >
+                    <table width="100%" style="border-spacing: 0">
+                      <tr>
+                        <td class="main-column" width="100%">
+                          <table
+                            class="column"
+                            style="
+                              width: 100%;
+                              max-width: 600px;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td width="100%" id="foot-adj">
+                                <p
+                                  class="light-style-text"
+                                  style="font-size: 12px"
+                                >
+                                  You are recieving this message because you
+                                  signed up to track your purchase.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding"
+                    style="padding-left: 15px; padding-bottom: 30px"
+                  >
+                    <table width="100%" style="border-spacing: 0">
+                      <tr>
+                        <td class="three-columns">
+                          <table
+                            class="column"
+                            style="
+                              width: 100%;
+                              max-width: 100px;
+                              border-spacing: 0;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <a href="#" style="font-size: 12px"
+                                  >Edit email settings</a
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                          <table
+                            class="column"
+                            style="
+                              width: 100%;
+                              max-width: 65px;
+                              border-spacing: 0;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <a href="#" style="font-size: 12px"
+                                  >Contact us</a
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                          <table
+                            class="column"
+                            style="
+                              width: 100%;
+                              max-width: 100px;
+                              border-spacing: 0;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <a href="#" style="font-size: 12px">Privacy</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="padding"
+                    style="
+                      height: 100px;
+                      padding-left: 20px;
+                      border-top: 1px solid;
+                    "
+                  >
+                    <table width="100%" style="border-spacing: 0">
+                      <tr>
+                        <td class="main-column">
+                          <table
+                            class="column"
+                            style="
+                              width: 100%;
+                              max-width: 100px;
+                              border-spacing: 0;
+                              vertical-align: top;
+                              display: inline-block;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <a href="#"
+                                  ><img
+                                    height="30"
+                                    src="./images/Logist.Me.png"
+                                    alt=""
+                                /></a>
+                              </td>
+                              <tr>
+                                <td width="30">
+                                  <p style="font-size: 12px;">
+                                    321, Express St, USA
+                                  </p>
+                                </td>
+                              </tr>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
               </td>
             </tr>
           </td>
